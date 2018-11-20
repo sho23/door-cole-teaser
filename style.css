@@ -7,9 +7,9 @@ body {
 }
 
 .section-content {
-  max-width: 750px;
+  min-width: 750px;
   margin: 0 auto;
-  padding: 40px 60px;
+  padding: 40px;
   text-align: center;
 }
 
