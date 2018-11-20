@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<section class="section js-section" data-section-name="section1">
+			<div class="section-content">
+				<div class="content-img">
+					<img src="https://placehold.jp/400x400.png" alt="">
+				</div>
+				<div class="inner my-0">
+					<p>あなたは"<b>目的地周辺</b>"で道に迷ったことがありますか？</p>
+					<img src="https://placehold.jp/600x400.png" alt="">
+				</div>
+				<div class="buttons">
+					<button class="btn-cancel">いいえ</button>
+					<button class="jump-next">はい</button>
+				</div>
+			</div>
+		</section>
+		<section class="section js-section" data-section-name="section2">
+			<div class="section-content">
+				<div class="inner">
+					<p>そんなときあなたはどうしてますか？</p>
+					<img src="https://placehold.jp/600x400.png" alt="">
+				</div>
+				<div class="buttons">
+					<button class="jump-next">目的地に電話する</button>
+					<button class="jump-next">通行人にきく</button>
+					<button class="jump-next">タクシーに乗る</button>
+				</div>
+			</div>
+		</section>
+		<section class="section js-section" data-section-name="section3">
+			<div class="section-content">
+				<div class="inner">
+					<p>！！ですよね！！<br>よーくわかります。</p>
+					<p>では、今までは<b>人に頼るしかなかった</b>目的地周辺での迷子・・・</p>
+					<p>もしも、<b>自分で解決できる</b>ようになるとしたら・・・？</p>
+					<img src="https://placehold.jp/600x400.png" alt="">
+				</div>
+				<div class="buttons">
+					<button class="jump-next">最高！！</button>
+				</div>
+			</div>
+		</section>
+		<section class="section js-section" data-section-name="section4">
+			<div class="section-content">
+				<h2>section 4</h2>
+				<p class="jump-next">次へ</p>
+				<p>文字が入ります。</p>
+				<p>文字が入ります。</p>
+				<p>文字が入ります。</p>
+			</div>
+		</section>
+		<section class="section js-section" data-section-name="section5">
+			<div class="section-content">
+				<div class="inner">
+					<p>使ってみたい！</p>
+					<p>と思ってくれたアナタはぜひ下記より事前登録をお願いします。</p>
+					<p>サービスが完成し次第ご連絡を差し上げます。</p>
+					<img src="https://placehold.jp/600x400.png" alt="">
+				</div>
+				<div class="buttons">
+					<button>メールアドレスで事前登録</button>
+					<button>LINE@で事前登録</button>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	<script src="./jquery.scrollify.js"></script>
+	<script>
+		var option = {
+		  section : '.js-section', // 対象を指定
+		  easing: "swing", // イージングをしてい(jQueryのanimation)
+		  scrollSpeed: 600, // スクロール時の速度
+		  scrollbars: false, // スクロールバーを表示するか
+		};
+		$(function() {
+		  $.scrollify(option); // scrollifyの実行
+		});
+		$('.jump-next').on('click',function(){
+			$.scrollify.next();
+		});
+	</script>
+</html>

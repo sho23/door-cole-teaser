@@ -1,0 +1,52 @@
+.section {
+  width: 100%;
+  background: #ebd140;
+}
+
+.section-content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.inner {
+  margin-top: 200px;
+  background: #FFF;
+  padding: 20px;
+}
+
+.inner p {
+  font-size: 40px;
+}
+
+.inner img {
+  width: 100%;
+}
+
+h2, h3, p {
+  color: #232323;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  font-size: 45px;
+  background: #8abb51;
+  border-radius: 15px;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.buttons .btn-cancel {
+  background: #6c4b14;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
