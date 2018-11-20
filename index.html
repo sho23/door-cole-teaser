@@ -4,7 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Document</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/modaal.min.css">
 	</head>
 	<body>
 		<section class="section js-section" data-section-name="section1">
@@ -17,8 +18,15 @@
 					<img src="https://placehold.jp/600x300.png" alt="">
 				</div>
 				<div class="buttons btn-list">
-					<button class="btn-cancel">いいえ</button>
+					<button class="btn-cancel modal">いいえ</button>
 					<button class="jump-next">はい</button>
+				</div>
+				<div id="modal" style="display:none;">
+					<div class="inner my-0">
+						<p>ナント！！<br>目的地周辺でナビに見放されても道に迷わないのですか！？</p>
+						<p>・・・ふむふむ。<br>方向感覚に恵まれたアナタには、こちらのサービスのほうが役に立つかもしれません。</p>
+						<img src="https://placehold.jp/600x200.png" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -76,17 +84,24 @@
 	src="https://code.jquery.com/jquery-1.12.4.min.js"
 	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 	crossorigin="anonymous"></script>
-	<script src="./jquery.scrollify.js"></script>
+	<script src="js/jquery.scrollify.js"></script>
+	<script src="js/modaal.min.js"></script>
 	<script>
 		var option = {
-		  section : '.js-section', // 対象を指定
-		  easing: "swing", // イージングをしてい(jQueryのanimation)
-		  setHeights:true,
-		  scrollSpeed: 600, // スクロール時の速度
-		  scrollbars: false, // スクロールバーを表示するか
+			section : '.js-section', // 対象を指定
+			easing: "swing", // イージングをしてい(jQueryのanimation)
+			setHeights:true,
+			scrollSpeed: 600, // スクロール時の速度
+			scrollbars: false, // スクロールバーを表示するか
 		};
 		$(function() {
-		  $.scrollify(option); // scrollifyの実行
+			$.scrollify(option); // scrollifyの実行
+			$('.modal').modaal({ // modalのセットアップ
+				content_source: '#modal',
+				background: '#ebd140',
+				hide_close: false
+			});
+			$('.close').modaal('close');
 		});
 		$('.jump-next').on('click',function(){
 			$.scrollify.next();
