@@ -14,7 +14,7 @@ body {
 }
 
 .inner {
-  margin-top: 100px;
+  margin-top: 75px;
   background: #FFF;
   padding: 20px;
 }
@@ -47,9 +47,15 @@ h2, h3, p {
 
 .buttons .btn-cancel {
   background: #6c4b14;
+  margin-right: 10px;
 }
 
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.btn-list button {
+  width: calc(50% - 5px);
+  float: left;
 }
