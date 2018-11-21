@@ -1,0 +1,23 @@
+.content-img img {
+	max-width: 200px;
+}
+
+.inner {
+	margin-top: 0;
+}
+
+.inner p {
+    font-size: 20px;
+}
+.inner img {
+	max-width: 300px;
+}
+
+.buttons button {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.section-content {
+	width: 750px;
+}
