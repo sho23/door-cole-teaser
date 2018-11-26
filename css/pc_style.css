@@ -1,5 +1,5 @@
 .content-img img {
-	max-width: 200px;
+	max-height: 200px;
 }
 
 .inner {
@@ -9,8 +9,9 @@
 .inner p {
     font-size: 20px;
 }
-.inner img {
-	max-width: 300px;
+
+.modaal-content-container img {
+	max-width: 600px;
 }
 
 .buttons button {
@@ -19,5 +20,14 @@
 }
 
 .section-content {
-	width: 750px;
+	width: 420px;
+	min-width: 420px;
+}
+
+.section-content img {
+	max-width: 300px;
+}
+
+.buttons button {
+	margin-top: 15px;
 }
