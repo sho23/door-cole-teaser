@@ -28,6 +28,15 @@
 	max-width: 300px;
 }
 
+.buttons {
+	margin-top: 10px;
+}
 .buttons button {
 	margin-top: 15px;
+}
+
+.icon-sm {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: text-top;
 }
