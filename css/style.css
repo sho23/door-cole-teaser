@@ -66,10 +66,14 @@ h2, h3, p {
 }
 
 .icon-sm {
-  width: 40px;
+  width: 40px !important;
   margin-right: 10px;
 }
 
-/*.inView {
-  display: none;
-}*/
+.layout-service img {
+  width: 700px;
+}
+
+.layout-service .inner {
+  margin-top: 25px;
+}
