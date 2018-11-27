@@ -78,3 +78,7 @@ h2, h3, p {
 .layout-service .inner {
   margin-top: 25px;
 }
+
+#section1 .section-content {
+  padding-top: 0;
+}
