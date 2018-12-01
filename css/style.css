@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "メイリオ", sans-serif;
-  max-height: 100%;
 }
 .section {
   width: 100%;
@@ -23,6 +22,7 @@ body {
 
 .inner p {
   font-size: 40px;
+  max-height: 100%;
 }
 
 .inner img {
