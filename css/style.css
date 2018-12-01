@@ -37,7 +37,7 @@ h2, h3, p {
   margin-top: 30px;
 }
 
-.buttons button {
+.buttons button, .link-btn {
   font-size: 45px;
   background: #8abb51;
   border-radius: 15px;
@@ -47,12 +47,16 @@ h2, h3, p {
   margin-top: 30px;
 }
 
+.link-btn {
+  width: calc(100% - 40px);
+}
+
 .buttons .btn-cancel {
   background: #6c4b14;
   margin-right: 10px;
 }
 
-.link-btn {
+.link-btn a {
   text-decoration: none !important;
   color: #FFF !important;
   display: block;
