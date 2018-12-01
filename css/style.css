@@ -52,6 +52,11 @@ h2, h3, p {
   margin-right: 10px;
 }
 
+.link-btn {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
