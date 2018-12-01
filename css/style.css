@@ -53,8 +53,8 @@ h2, h3, p {
 }
 
 .link-btn {
-  text-decoration: none;
-  color: #FFF;
+  text-decoration: none !important;
+  color: #FFF !important;
 }
 
 .my-0 {
