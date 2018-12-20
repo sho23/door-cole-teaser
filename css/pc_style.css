@@ -44,3 +44,8 @@
 .layout-service .inner {
 	margin-top: 0;
 }
+
+.buttons button, .link-btn {
+	font-size: 20px;
+	padding: 10px 20px;
+}
